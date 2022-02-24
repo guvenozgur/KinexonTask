@@ -1,0 +1,4 @@
+/client/node_modules
+/client/.next
+/kinexon-server/node_modules
+/server/__pycache__

@@ -50,7 +50,7 @@ export default function DeviceMonitor ({
 */
 
     useEffect(()=>{
-      socket.current = new W3CWebSocket(`ws://localhost:9000/`, 'echo-protocol');
+      socket.current = new W3CWebSocket(`ws://127.0.0.1:9000/`, 'echo-protocol');
 
       socket.current.onopen = () => {
         console.log('Socket is ready to use!');

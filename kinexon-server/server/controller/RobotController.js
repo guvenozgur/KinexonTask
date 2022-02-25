@@ -12,7 +12,7 @@ module.exports = ()=>{
             let statusResp = await getReq(`${url}/getRobotStatus/${req.query.name}`);
             resp.status(200).json(statusResp)
         }catch(err){
-
+            console.error(err)
         }
     })
 
@@ -21,7 +21,7 @@ module.exports = ()=>{
             let statusResp = await getReq(`${url}/getRobotInfo/${req.query.name}`);
             resp.status(200).json(statusResp)
         }catch(err){
-
+            console.error(err)
         }
     })
 
@@ -30,7 +30,7 @@ module.exports = ()=>{
             await postReq(`${url}/charge`, req.body)
             resp.status(200)
         }catch(err){
-
+            console.error(err)
         }
     })
 
@@ -38,7 +38,7 @@ module.exports = ()=>{
         try{
             resp.status(200).json(robotList)
         }catch(err){
-
+            console.error(err)
         }
     })
 

@@ -1,6 +1,6 @@
 import {httpGet, httpPost} from './rest'
 
-const url = `http://localhost:9000`
+const url = `http://127.0.0.1:9000`
 
 export async function getAllRobotIds() {
     return await httpGet(`${url}/getRobotList`)

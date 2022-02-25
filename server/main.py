@@ -1,5 +1,7 @@
-from typing import Optional
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+app = FastAPI()
+
+from typing import Optional
 from pydantic import BaseModel
 from typing import List
 from fastapi.responses import HTMLResponse

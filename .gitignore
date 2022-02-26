@@ -1,4 +1,6 @@
-/client/node_modules
-/client/.next
-/kinexon-server/node_modules
-/server/__pycache__
+/nextjs-client/node_modules
+/nextjs-client/.next
+/nextjs-client/package-lock.json
+/nodejs-server/node_modules
+/nodejs-server/package-lock.json
+/python-server/__pycache__

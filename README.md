@@ -22,6 +22,8 @@ cd KinexonTask/<br />
 - [x] Front-end using NextJS
 - [x] NodeJS backend for front-end
 - [x] Python backend to simulate robot(s)
+- [ ] Create more than one python instance for each robot simulation and get robot url from a datasource
+- [ ] Create env variables for parameters like url
 - [ ] API Validation
 - [ ] Test 
 - [ ] Authorization

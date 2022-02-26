@@ -1,4 +1,3 @@
-<br />
 <div align="center">
  
 <h3 align="center">Kinexon Task</h3>
@@ -14,8 +13,8 @@ Nodejs, express, nextjs, react, docker, docker-compose, python, fastAPI
 ## Getting Started
 
 ### Prerequisites
-git clone https://github.com/guvenozgur/KinexonTask.git
-cd KinexonTask/
+git clone https://github.com/guvenozgur/KinexonTask.git<br />
+cd KinexonTask/<br />
 ./runner.sh 
 
 

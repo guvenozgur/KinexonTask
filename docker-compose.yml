@@ -2,21 +2,21 @@ version: '3.8'
 
 services:
   server:
-    build: ./server/
-    command: uvicorn server.main:app --host 0.0.0.0
+    build: ./python-server/
+    command: uvicorn python-server.main:app --host 0.0.0.0
     volumes:
       - .:/app
     ports:
       - 8000:8000
   web-server:
-    build: ./kinexon-server/
+    build: ./nodejs-server/ 
     command: npm run start
     volumes:
       - .:/app
     ports:
       - 9000:9000
   #client:
-  #  build: ./client/
+  #  build: ./nextjs-client/
   #  command: npm run start
   #  volumes:
   #    - .:/app
@@ -24,6 +24,6 @@ services:
   #    - 3000:3000
   #  depends_on:
   #    server:
-  #      condition: service_healthy
+  #      condition: service_started
   #    web-server: 
-  #      condition: service_healthy
+  #      condition: service_started
